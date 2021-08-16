@@ -64,6 +64,7 @@ class FibCounter(object):
         self.current_minus_2 = self.current_minus_1
         self.current_minus_1 = self.current
         self.current = self.current_minus_2 + self.current_minus_1
+        self.counter += 1
 
         if self.current <= self.stop:
             return self.current
